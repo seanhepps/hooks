@@ -16,8 +16,8 @@
             "email": "seanhepps@gmail.com"
         }
     ],
-    "require": {  
-        "php": "^5.6.0"
+    "require": {
+        "php": ">=5.6"
     },
     "autoload": {
         "psr-4" : {
