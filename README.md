@@ -12,5 +12,16 @@
 ## 保存到文件
 `Hook::getAction()->save()`
 
+如果想要更换缓存文件保存位置，可以修改Base类构造函数中的保存路径
+
 ## 监听
 `Hook::action($hookName, $args)`
+
+## 使用过滤器
+
+使用过滤器和使用action钩子用法一模一样，只需要把上面`getAction`替换成`getFilter`就可以了
+
+## 过滤器监听
+
+`$result = Hook::filter($hookName, $args)`
+
