@@ -14,7 +14,9 @@ class Filter extends Base
     {
         // 获取钩子
         $hooks = $this->getListeners($hook);
-        if (!$hooks) return true;
+        if (!$hooks) {
+            return $args;
+        }
 
         // 执行
         foreach ($hooks as $k => $v) {
